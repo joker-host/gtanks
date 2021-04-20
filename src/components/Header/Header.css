@@ -1,0 +1,28 @@
+.header {
+    background-color: black;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.header__nav-menu {
+    display: flex;
+}
+
+.header__nav-menu-links-left {
+    display: flex;
+}
+
+.header__nav-menu-links-right {
+    display: flex;
+}
+
+.header__nav-menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.header__nav-menu-link-text {
+    text-align: centers;
+}
