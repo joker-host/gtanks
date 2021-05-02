@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <header className="header">
-      <h1 className="header__logo"><span className="header__span">g</span>Tanks</h1>
+      <h2 className="header__logo"><span className="header__logo-span">g</span>Tanks</h2>
       <div className="header__nav-menu">
         <div className="header__nav-menu-links-left">
           <div className="header__nav-menu-link">
@@ -43,7 +43,7 @@ function Header() {
           </div>
           <div className="header__nav-menu-link">
             <img className="header__nav-menu-icon" src={Download}></img>
-            <p className="header__nav-menu-link-text">Скачать клиент</p>
+            <p className="header__nav-menu-link-text orange">Скачать клиент</p>
           </div>
         </div>
       </div>
