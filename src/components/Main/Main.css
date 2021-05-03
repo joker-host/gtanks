@@ -5,17 +5,29 @@
 }
 
 .main {
+    position: relative;
+    z-index: 2;
     height: 874px;
-    width: 100%;
-    background-image: url(../../images/MainBg.jpg);
+    /* width: 100%; */
+    background-image: url(../../images/MainBg.png);
+    background-color: #1C1C1C;
     background-repeat: no-repeat;
-    /* background-position: center center; */
-    background-size: cover;
+    background-position: center right -100px;
+    padding: 0 0 0 140px;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     color: #FFFFFF;
+}
+
+.main__bg-image {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .main__title {
@@ -44,4 +56,35 @@
     line-height: 38px;
     margin-bottom: 50px;
 
+}
+
+.main__links-wrapper {
+    display: flex;
+}
+
+.main__link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 165px;
+    height: 73px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.main__link_yellow-button {
+    background: url(../../images/Shards-button.svg), linear-gradient(180deg, #FFA800 0%, #FF9313 100%);
+    color: #000000;
+    margin-right: 30px;
+}
+
+.main__link_white-button {
+    box-sizing: border-box;
+    width: 240px;
+    height: 73px;
+    border: 2px solid #FFFFFF;
 }

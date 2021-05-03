@@ -36,14 +36,14 @@ function Header() {
         </div>
         <div className="header__line"></div>
         <div className="header__nav-menu-links-right">
-          <div className="header__nav-menu-link right">
-            <img className="header__nav-menu-icon flag-lang" src={Russia}></img>
+          <div className="header__nav-menu-link header__nav-menu-link_right">
+            <img className="header__nav-menu-icon header__nav-menu-icon_flag-lang" src={Russia}></img>
             <p className="header__nav-menu-link-text">RU</p>
             <img className="header__nav-menu-icon" src={Arrow}></img>
           </div>
           <div className="header__nav-menu-link">
             <img className="header__nav-menu-icon" src={Download}></img>
-            <p className="header__nav-menu-link-text orange">Скачать клиент</p>
+            <p className="header__nav-menu-link-text header__nav-menu-link-text_orange">Скачать клиент</p>
           </div>
         </div>
       </div>

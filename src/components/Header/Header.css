@@ -1,8 +1,8 @@
 .header {
-    background-color: black;
+    background-color: #1C1C1C;
     color: #FFFFFF;
     display: flex;
-    padding: 28px 240px 30px;
+    padding: 28px 140px 30px;
     box-sizing: border-box;
     justify-content: space-between;
     height: 85px;
@@ -50,7 +50,7 @@
     margin-right: 0;
 }
 
-.orange {
+.header__nav-menu-link-text_orange {
     color: #FF981F;
 }
 
@@ -76,10 +76,10 @@
     align-self: center;
     align-items: center;
     position: relative;
-    top: -2px
+    top: -1px;
 }
 
-.flag-lang {
+.header__nav-menu-icon_flag-lang {
     margin-right: 10px;
 }
 
@@ -87,6 +87,6 @@
     margin-right: 5px;
 }
 
-.right {
+.header__nav-menu-link_right {
     margin-right: 30px;
 }
