@@ -1,0 +1,31 @@
+.carousel {
+    position: relative;
+}
+
+.carousel__wrapper {
+    z-index: 3;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    padding: 0 100px 0 100px;
+}
+
+.carousel__arrow {
+    box-sizing: border-box;
+    width: 40px;
+    padding: 0px;
+    background: inherit;
+    outline: none;
+    /* border: 2px solid red; */
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.carousel__arrow:disabled {
+    cursor: default;
+}

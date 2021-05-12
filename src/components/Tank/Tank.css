@@ -1,0 +1,84 @@
+.tank {
+    position: relative;
+    z-index: 2;
+    height: 1175px;
+    /* width: 100%; */
+    background-image: url(../../images/MainBg.png);
+    background-color: #1C1C1C;
+    background-repeat: no-repeat;
+    background-position: center right -100px;
+    padding: 0 0 0 140px;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFFFFF;
+}
+
+.tank__bg-image {
+    width: 100%;
+    position: absolute;
+    bottom: -220px;
+    left: 0;
+    z-index: -1;
+}
+
+.tank__title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Quadrat-Grotesk-New-Bold', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 100px;
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.tank__span-title {
+    font-size: 120px;
+}
+
+.tank__subtitle {
+    margin: 0;
+    width: 484px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 38px;
+    margin-bottom: 50px;
+
+}
+
+.tank__links-wrapper {
+    display: flex;
+}
+
+.tank__link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 165px;
+    height: 73px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.tank__link_yellow-button {
+    background: url(../../images/Shards-button.svg), linear-gradient(180deg, #FFA800 0%, #FF9313 100%);
+    color: #000000;
+    margin-right: 30px;
+}
+
+.tank__link_white-button {
+    box-sizing: border-box;
+    width: 240px;
+    height: 73px;
+    border: 2px solid #FFFFFF;
+}
