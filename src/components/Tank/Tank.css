@@ -2,29 +2,57 @@
     position: relative;
     z-index: 2;
     height: 1175px;
-    /* width: 100%; */
     background-image: url(../../images/MainBg.png);
     background-color: #1C1C1C;
-    background-repeat: no-repeat;
-    background-position: center right -100px;
-    padding: 0 0 0 140px;
-    background-size: contain;
+    background-repeat: no-repeat;   
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     color: #FFFFFF;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+}
+
+.tank_wrapper {
+    padding: 0 0 0 140px;
+    margin-top: auto;
+    position: relative;
+}
+
+.tank__online {
+    position: absolute;
+    top: 20px;
+    right: -60px;
+    width: 91px;
+    height: 34px;
+    background: #499D7B;
+    border: 4px solid #363636;
+    border-radius: 8px 8px 8px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tank__text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .tank__bg-image {
     width: 100%;
     position: absolute;
-    bottom: -220px;
+    bottom: -200px;
     left: 0;
     z-index: -1;
 }
 
 .tank__title {
+    position: relative;
+    left: -8px;
     margin: 0;
     padding: 0;
     text-align: center;

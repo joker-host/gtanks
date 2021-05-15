@@ -9,30 +9,26 @@ import SliderCard from '../SliderCard/SliderCard';
 
 import leftArrow from '../../images/Left-arrow.svg'
 import rightArrow from '../../images/Right-arrow.svg'
-// import Sparks from '../../images/Sparks.svg';
-import Sparks from '../../images/SliderBg.png';
 
 
 
 function Slider() {
 
   const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    // { width: 550, itemsToShow: 2 },
+    { width: 500, itemsToShow: 2 },
     { width: 850, itemsToShow: 2 },
+    { width: 950, itemsToShow: 3 },
     // { width: 1150, itemsToShow: 4 },
     { width: 1450, itemsToShow: 3 },
-    // { width: 1750, itemsToShow: 6 },
+    { width: 1750, itemsToShow: 4 },
   ];
 
   const myArrow = ({ type, onClick, isEdge }) => {
     return (
       <button onClick={onClick} disabled={isEdge} className='carousel__arrow'>
-        {/* {type === consts.PREV && isEdge ? <img src={leftArrow}></img> : <img src={rightArrow}></img>} */}
         {isEdge ? <img src=''></img> : 
           type === consts.PREV ? <img src={leftArrow}></img> : <img src={rightArrow}></img>
         }
-        {/* {isEdge ? disabled=true : disabled=false} */}
       </button>
     )
   }
@@ -46,7 +42,7 @@ function Slider() {
           breakPoints={breakPoints} 
           renderArrow={myArrow} 
           easing="ease-out"
-          transitionMs={600}
+          transitionMs={750}
         >
           <SliderCard />
           <SliderCard />
@@ -58,8 +54,6 @@ function Slider() {
           <SliderCard />
           <SliderCard />
           <SliderCard />
-          {/* <SliderCard />
-        <SliderCard /> */}
         </Carousel>
       </div>
     </div>
