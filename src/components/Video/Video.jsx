@@ -1,36 +1,22 @@
 import './Video.css';
 
-import { React, useEffect } from "react";
+import React from "react";
 
-
+import VideoPlayer from 'react-video-js-player'
+import Trailer from '../../images/Trailer.mp4'
+import Poster from '../../images/Poster.png'
 
 function Video() {
-    useScript("https://www.youtube.com/watch?v=R5O5lLIph9Y");
 
-    function useScript(url) {
-        useEffect(() => {
-            const script = document.createElement("script");
-            script.src = url;
-            script.async = true;
-            document.body.appendChild(script);
-            return () => {
-                document.body.removeChild(script);
-            };
-        }, [url]);
-    }
-
-    function PlayNewVideo() {
-        if (window.pljssglobal.length > 0) {
-          window.pljssglobal[0].api("play", "https://www.youtube.com/watch?v=R5O5lLIph9Y");
-        }
-      }
+    const videoSrc = "https://www.youtube.com/watch?v=wJ8DCi1FBgY"
 
     return (
-        <section className="video" id="player">
-            <input type="button" value="Play a new video" onClick={PlayNewVideo} />
-            <div id="player"></div>
+
+        <section className="video">
+            <VideoPlayer className="video__player" src={Trailer} poster={Poster}/>
         </section>
     );
+
 
 }
 
