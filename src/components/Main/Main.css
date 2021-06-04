@@ -1,5 +1,8 @@
 .content {
+    /* position: relative; */
     /* min-height: calc(100vh - 80px); */
-    height: 1175px;
+    /* height: auto; */
+    /* width: 100%; */
     width: 100%;
+    position: relative;
 }

@@ -13,10 +13,9 @@ function Video() {
     return (
 
         <section className="video">
-            <VideoPlayer className="video__player" src={Trailer} poster={Poster}/>
+            <VideoPlayer className="video__player" src={Trailer} poster={Poster} />
         </section>
     );
-
 
 }
 
